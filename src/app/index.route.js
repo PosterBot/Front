@@ -12,7 +12,7 @@
 				url: '/projects',
 				templateUrl: 'app/projects/projects.html',
 				controller: 'ProjectsController',
-				controllerAs: 'vm', 
+				controllerAs: 'vm',
 				title: 'Projects List'
 			})
 			.state('login', {
@@ -22,7 +22,7 @@
 				controllerAs: 'vm',
 				title: 'Login'
 			});
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/projects');
   }
 
 })();
