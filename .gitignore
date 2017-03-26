@@ -6,3 +6,4 @@ coverage/
 .tmp/
 dist/
 src/app/settings
+.DS_Store

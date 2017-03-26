@@ -6,11 +6,11 @@
                     <h4>Projects</h4>
                 </div>
                 <div class="projects-list panel-body">
-                    <div class="list-item">Telegram</div>
+                    <div class="list-item">Telegram <span class="badge">{{vm.getDataCount(vm.projects.telegram) || ''}}</span></div>
                     <ul ng-repeat="project in vm.projects.telegram">
                         <li ng-click="vm.setActiveProject(project)">{{project.name}}</li>
                     </ul>
-                    <div class="list-item">Vk</div>
+                    <div class="list-item">Vk <span class="badge">{{vm.getDataCount(vm.projects.vk) || ''}}</span></div>
                     <ul ng-repeat="project in vm.projects.vk">
                         <li ng-click="vm.setActiveProject(project)">{{project.name}}</li>
                     </ul>
